@@ -1,7 +1,7 @@
 # idea-felix-scr-plugin
 IntelliJ IDEA plugin for augment  service @reference with bind/unbind methods 
 
-This is usefull when you writing tests for your OSGI component.
+This is usefull when you writing unit tests for your OSGI component.
 
 # Demo
  
@@ -20,7 +20,7 @@ public class UserHandler {
     @Reference
     private OrganizationService organizationService;
 
-``
+
     @Reference(
             bind = "bindRoles", unbind = "unbindRoles"
     )
@@ -34,7 +34,7 @@ public class UserHandler {
     
     protected void unbindRoles(RolesService servive) {
             ....
-        }
+    }
 }
 ````
 
