@@ -1,0 +1,30 @@
+<idea-plugin>
+  <id>com.gis.felix.scr.plugin</id>
+  <name>Felix SCR augment plugin</name>
+  <version>1.0</version>
+  <vendor email="ivanov-d@gaz-is.ru" url="http://gaz-is.ru">GiS</vendor>
+
+  <description><![CDATA[
+      This plugin used for augment classes with bind/unbind methods for service @reference
+    ]]></description>
+
+  <change-notes><![CDATA[
+      first version
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="139.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <lang.psiAugmentProvider implementation="com.gis.scr.AugmentProvider"/>
+  </extensions>
+
+
+</idea-plugin>
