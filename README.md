@@ -9,6 +9,7 @@ This is usefull when you writing tests for your OSGI component.
  ````java
 import org.apache.felix.scr.annotations.Component;
 import org.apache.felix.scr.annotations.Reference;
+
 @Service(Handler.clsss)
 @Component(name = "UserHanlder", immediate = true)
 public class UserHandler {
@@ -39,3 +40,7 @@ public class UserHandler {
 
 "stubs" will ge used for userService and organizatioService.
 But not for roles (because of bindRoles method exists)
+
+So, when you write your unit-test you can use autocomlete and "navigate-to" features:
+
+![tag alt](https://raw.githubusercontent.com/vfpfafrf/idea-felix-scr-plugin/images/doc/demo.png)
